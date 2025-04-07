@@ -16,5 +16,15 @@ $app -> put('/alunni/{id}', "AlunniController:update");
 
 $app -> delete('/alunni/{id}', "AlunniController:delete");
 
+$app -> get('/alunni{id}/certificazioni', "CertificazioniContrller:index");
+
+$app -> get('/alunni{id}/certificazioni/{id_cert}', "CertificazioniContrller:show");
+
+$app -> post('/alunni{id}/certificazioni', "CertificazioniContrller:create");
+
+$app -> put('/alunni{id}/certificazioni/{id_cert}', "CertificazioniContrller:update");
+
+$app -> delete('/alunni{id}/certificazioni/{id_cert}', "CertificazioniContrller:delete");
+
 $app->run();
 ?>
