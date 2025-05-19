@@ -41,15 +41,22 @@ function App() {
     <div className="App">
       {alunni.length > 0 && (
         <>
-          <table className="Tabella">
+          <table className="Tabella" class="stileTabella">
+            <tr>
+              <th class="stileRiga">#</th>
+              <th class="stileRiga">Nome</th>
+              <th class="stileRiga">Cognome</th>
+            </tr>
             {alunni.map((alunno) => (
               <tr>
-                <td>{alunno.id}</td>
-                <td>{alunno.nome}</td>
-                <td>{alunno.cognome}</td>
+                <td class="stileRiga">{alunno.id}</td>
+                <td class="stileRiga">{alunno.nome}</td>
+                <td class="stileRiga">{alunno.cognome}</td>
+                <td class="stileRiga"></td>
               </tr>
             ))}
           </table>
+          <br />
           {!inserimento && (
             <button className="Bottone" onClick={() => setInserimento(true)}>
               inserisci alunno

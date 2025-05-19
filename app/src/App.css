@@ -37,7 +37,15 @@
   }
 }
 
-table {
-  border: solid, black, 2px;
+.stileTabella {
+  border: solid black  3px;
+  border-collapse: collapse;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+}
+
+.stileRiga {
+  border: solid black  2px;
   border-collapse: collapse;
 }
